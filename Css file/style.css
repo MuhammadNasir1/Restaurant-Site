@@ -1,0 +1,707 @@
+/* .....navbar.....  */
+
+.btn-close{
+  font-size: xx-large;
+  background-color: #ffc107;
+}
+.modal-content{
+  background-color: aqua;
+}
+.modal-header{
+  border-bottom:none;
+}
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+.searchbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+.search-btn{
+  padding-top: 20px;
+}
+.search-input{
+  margin-top: 20vh;
+  border: none;
+  font-size:30px;
+  background-color: black;
+  border-bottom: 1px solid white;
+  padding: 20px 0px 15px 10px;
+  color: white;
+  font-family: 'Arvo', serif;
+   
+}
+.search-input:focus {
+  border: none;
+}
+
+.open-hours{
+  border: 2px solid #ffc107;  
+  position: relative;
+  color:#ffc107;
+  font-family: 'Arvo', serif;
+  background-color: rgb(0, 0, 0);
+  border-left: none;
+  border-right: none;
+  margin-top: 40vh;
+
+}
+.text{
+text-align: center;
+display: flex;
+/* flex-direction: column; */
+align-items: center;
+justify-content: center;
+padding: 10px 0px 10px 0px;
+
+
+}
+
+.nav-item{
+  margin:  0px 8px 0px 8px;
+  font-size: 3.5vh;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+  text-decoration-color: #ffc107;
+  text-decoration-thickness: 3px;
+  transition:1s linear;
+  animation-duration: 2s;
+}
+
+.icon{
+  width: 6vh;
+  margin-right: 20px;
+}
+.btns{
+  border: 2px solid #ffc107;
+  color:#ffc107;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius:50px;
+  width: 14vh;
+  height: 7vh;
+}
+
+.btns:hover{
+  border: 3px solid white;
+  color:black;
+  background-color:#ffc107;
+}
+
+.togler{
+  background-color: #ffc107;
+  border: 2px solid white ;  
+}
+
+/* .....banner.... . */
+.banner{
+position: absolute;
+height: 110vh;
+z-index: -50;
+}
+
+/* .....dropdown.... . */
+.dropdown-item{
+  color:white;
+  
+}
+
+.dropdown-item:hover{
+  background-color: #ffc107;
+  color: black; 
+}
+/* .dropdown-menu a{
+  color: black;
+}
+.dropdown-menu a :hover{
+  color: black;
+} */
+
+/* .....banner-heading.... . */
+.heading{
+  font-size:60px;
+  color: #ffc107;
+  padding-top: 28vh;
+  font-family: 'Arvo', serif;
+  padding-left: 30px;
+  line-height: 75px;
+}
+.heading-span{
+  font-size:55px;
+}
+
+.heading-buttons{
+  padding-left: 40px;
+  padding-top: 20px;  
+}
+
+.heading-btn{
+  font-family: 'Arvo', serif;
+  padding: 9px 9px 9px 9px;
+  font-size: x-large;
+  background-color: #ffc107;
+  border:3px solid white;
+  color: black;
+  margin-top: 18px;
+  transition:all 0.5s;
+}
+
+.heading-btn:hover{
+  border: 3px solid #ffc107;
+  color:white;
+}
+
+/* .....banner-heading.... . */
+.header-img{
+width: 80vh;
+margin-top: 16vh;
+position: absolute;
+padding-left: 10vh;
+transition: transform 250ms;
+height: auto;
+}
+
+.header-img:hover{
+  transform: translateY(-10px);
+}
+
+
+.menu-heading{
+  display: flex;
+  justify-content: center;
+  padding-top: 200vh;
+  color:red;
+}
+
+
+/* ....Welcome.....  */
+.welcome{
+  padding-top:30px;
+}
+.event-section-heading a {
+  text-decoration: none;
+}
+
+.more{
+  display: inline;
+  color: black;
+  font-family: 'Arvo', serif;
+  transition: all 0.5s;
+}
+.more:hover{
+  color: #ffc107;
+}
+.arrow{
+  color: red;
+  font-size: x-large;
+  padding-left: 10px;
+  margin-top: 30px;
+  /* padding-top: 100px; */
+}
+/* ....speciality-Section.... */
+.speciality-box{
+  background-color:whitesmoke;
+  position: relative;
+  margin-top:50px;
+  border-radius: 20px; 
+}
+.ok-hand-logo{
+  width: 70px;
+  align-items: center;
+}
+.card-sp-title{
+  text-align: center;
+}
+.card-sp{
+  border: none;
+  height:auto;
+}
+.card-sp-body{
+  background-color: whitesmoke;
+  text-align: center;
+}
+.card-sp-text{
+  color: rgba(0, 0, 0, 0.781);
+}
+
+
+.speciality-heading-line{
+  color: black;
+  display: block;
+  height: 5px;
+  border: 0;
+  border-top:10px double  ;
+  margin: 1em 0;
+  margin-top: 300px;
+
+}
+.speciality-heading-line2{
+  color: #ffc107;
+  display:flex;
+  align-items: center;
+  height: 5px;
+  border: 0;
+  border-top:10px double  ;
+  margin: 1em 0;
+
+}
+.offer-heading{
+  font-family:'Arvo', serif;
+  color: #ffc107;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.fix-img{
+  height: 60vh;
+  background-image:url(../image/banner_bg.jpg);
+  border-radius: 20px;
+  /* background-repeat: no-repeat; */ 
+}
+
+
+
+
+/* ....footer.... */
+footer{
+  background-color:rgba(0, 0, 0, 0.830)
+
+}
+.main-footer-contant{
+  display: flex;
+
+}
+h2{
+  padding-top: 50px;
+  padding-bottom: 10px;
+  color: #ffc107;
+  /* color:white; */
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+  display: flex;
+  font-size: x-large;
+ }
+/* ....right-box.... */
+
+
+
+/* ....left-box.... */
+.left-box{
+  color:black;
+  /* padding-left: 40px; */
+}
+.left-box-para{
+  padding-top: 10px;
+  font-size: large;
+  color: white;
+
+ }
+ .left-box-heading{
+  padding-left: 12px;
+ }
+ .social{
+  margin: 40px 0px 40px 0px;
+
+ }
+.center-box .social a{
+  padding: 0px 4px;
+  color: white ;
+
+}
+.center-box .social a span{
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #ffc107;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 5px;
+}
+.center-box .social a span:hover{
+  background-color: #ffc107;
+  color: white;
+  transition: all 0.5s;
+  
+}
+
+/* ....center-box.... */
+.footer-logo{
+  margin-top: 50px;
+}
+.footer-logo-div{
+  align-items: center;
+  /* text-align: center; */
+}
+.left-boxa-para{
+  color: #ffc107;
+  font-family: 'Arvo', serif;
+  padding-top: 23px;
+  /* text-align: center; */
+}
+.left-boxo-para{
+  color: white;
+  font-family: 'Arvo', serif;
+  /* padding-left: 15px; */
+  /* text-align: center; */
+
+}
+
+.center-box-heading{
+   color: #ffc107;
+   text-transform:uppercase;
+   font-family: 'Arvo', serif;
+   font-weight: bold;
+}
+.center-box-para{
+  padding-top: 10px;
+  line-height: 27px;
+  /* color: white; */
+  color:rgba(255, 255, 255, 0.900);
+  font-size:large;
+
+}
+.center-box-heading-div{
+  line-height:15px;
+  padding-top: 15px;
+  font-family: 'Arvo', serif;
+  
+}
+
+.left-box-links{
+  color: #ffc107;
+}
+.left-box-links ul  a{
+  text-decoration: none;
+  /* list-style-type: circle; */
+  font-family: 'Arvo', serif;
+  color:rgba(255, 255, 255, 0.900);
+  line-height: 36px;
+  font-size: large;
+}
+.left-box-links ul{
+  padding-top: 8px;
+}
+.left-box-links ul a:hover{
+  color: #ffc107;
+  transition: all 0.5s;
+}
+
+  .copyright{
+    border-top: 0.50px solid rgba(255, 255, 255, 0.39);
+    color: rgba(255, 255, 255, 0.568);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align:center;
+    /* width: 100%; */
+    font-size: larger;
+    display: flex;
+     justify-content: space-between;
+     padding-left: 30px;
+  }
+  .copyrighta{
+    display: inline-block;
+    margin-left: 20px;
+   
+  }
+  .copyright a span{
+    color: rgba(255, 255, 255, 0.568);
+
+  }
+  .copyright a{
+    text-decoration: none;
+  }
+  .copyright a span:hover{
+   color: #ffc107;
+   transition: 0.50s;
+  }
+   /* ....menu-section.... */
+   .menu-selecter{
+    color:red;
+    font-family: 'Arvo', serif;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+   }
+.home-menu a{
+  text-decoration: none;
+  color:white;
+  font-family: 'Arvo', serif;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+ 
+}
+.container-fluid a:hover{
+  text-decoration: underline;
+  text-decoration-color: #ffc107;
+  transition: 0.50s;
+  color: #ffc107;
+}
+
+  .lunch-menu{
+    border: 1px solid transparent;
+    height: 370px;
+    background-image: url(../image/lunch-img-edit.jpg);
+    background-repeat: no-repeat;
+    border-radius: 15px; 
+    margin-bottom: 25px;
+  }
+   
+  .lunch-menu-inner{
+    border: 2px solid #ffc107;
+    color: white;
+    height: 330px;
+    margin:20px;
+  }
+
+  .dinner-menu{
+    border: 1px solid transparent;
+    height: 370px;
+    background-image: url(../image/Dinner-img.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  .bar-menu{
+    border: 1px solid transparent;
+    height: 370px;
+    background-image: url(../image/bar-img.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  .dessert-menu{
+    border: 1px solid transparent;
+    height: 370px;
+    background-image: url(../image/dessert-img.jpg);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  
+
+
+   /* ....upcoming-event-section.... */
+.upcoming-event-section{
+  margin-top: 20px;
+}
+.event-section-heading{
+  color: aliceblue;
+}
+.upcoming-event{
+  color: #ffc107;
+  font-size: 56px;
+  font-family: 'Arvo', serif;
+  font-weight: bold;
+}
+.event-section-img{
+  width: 100%;
+  height: auto;
+}
+
+.event-para{
+  color: red;
+  font-family: 'Arvo', serif;
+  font-size: 25px;
+  line-height: 2.5rem;
+  font-weight: bold;
+  margin-top:25px;
+}
+.event-para-line{
+  color: #ffc107;
+  margin: 0px 10px 0px 10px;
+}
+.event-2ndpara{
+  color: rgba(0, 0, 0, 0.744);
+  font-size: larger;
+  margin-top: 25px;
+  line-height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.event-btn{
+  font-family: 'Arvo', serif;
+  padding: 12px 12px 12px 12px;
+  font-size: x-large;
+  background-color: #ffc107;
+  border:3px solid white;
+  color: black;
+  margin-top: 18px;
+  border-radius: 20px;
+  text-align: center;
+  border: 3px solid rgba(0, 0, 0, 0.425);
+  transition: all 0.5s;
+  margin-top: 30px;
+   margin-bottom: 20px;
+}
+.event-btn:hover{
+  color: white;
+  border: 3px solid #ffc107;
+  color: #ffc107;
+  background-color: white;
+}
+.fix-image{
+  background-image: url(../image/main\ banner.jpg);
+  height: 100vh;
+  background-attachment: fixed;
+
+}
+.map{
+  height: 100vh;
+  touch-action: pan-x pan-y;
+  border-top: none;
+}
+.map-heading{
+  color: #ffc107;
+  font-size: 40px;
+  font-family: 'Arvo', serif;
+  text-align: center;
+  /* border: 2px solid black; */
+  border-top:none;
+  background-color: rgba(0, 0, 0, 0.830);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0% ;
+}
+.map-border{
+  border: 10px double rgba(0, 0, 0, 0.830);
+  margin-bottom: 20px;
+}
+
+
+
+.blog-section{
+  display: flex;
+  justify-content: center;
+}
+.card-blog{
+  height: auto;
+  width: 22rem;
+}
+.blog-img{
+  width: 100%;
+  height: auto;
+  border: 1px solid #ffc107;
+  padding: 10px 10px 10px 10px;
+}
+.blog-img:hover{
+  transition-delay:1s;
+  transition-timing-function: ease-in-out;
+  transition-duration:7s;
+  transition-property: all;
+}
+.card-body-blog{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-family: 'Arvo', serif;
+
+}
+.card-title-blog{
+  font-size: small;
+  color: #ffc107;
+}
+.card-title-blog a{
+text-decoration: none;
+color: black;
+font-weight: bolder;
+
+}
+.card-title-blog a:hover{
+  color: #ffc107;
+  transition: 0.50s;
+}
+.card-text-blog{
+  color:rgb(15, 13, 13);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.btn-blog{
+  color: #ffc107;
+  border: 3px solid #ffc107;
+  background-color: rgba(0, 0, 0, 0.800);
+  border-radius: 30px;
+  padding: 15px 15px 15px 15px;
+  font-weight: bold;
+}
+.btn-blog:hover{
+  color: black;
+  border:3px solid black;
+  background-color: #ffc107;
+  transition: all 0.50s;
+}
+.blog-heading{
+  text-align: center;
+  font-family: 'Arvo', serif;
+  color: rgb(41, 35, 35);
+  font-size: large;
+  margin-top: 10vh;
+  
+}
+.blog-heading2{
+  color: #ffc107;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  font-size: 40px;
+}
+
+/* ...............................blog-page-start...............................  */
+
+.blog-welcome-heading{
+  color:white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arvo', serif;
+  font-size: 50px;
+}
+.blog-div{
+  width: 100%;
+  height: 95vh;
+  padding-top: 40vh;
+}
+.blog{
+  color: #ffc107;
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Arvo', serif;
+}
+
+
+/* .....Pagination.....  */
+.blog-1st-page{
+  padding-top: 10vh;
+}
+.pagination{
+padding-bottom: 40px;
+padding-top: 30px;
+}
+.page-item a {
+  color:#ffc107;
+  border:2px solid #ffc107;
+  font-size: larger;
+  background-color: rgba(0, 0, 0, 0.830);
+  font-family: 'Arvo', serif;
+}
+
+.page-item a:hover{
+  color: black;
+  background-color: #ffc107;
+  border: 2px solid black;
+  transition: 0.50s;
+}
+
+.bg-banner{
+  background-image: url(../image/Blog-Page-Banner-2.jpg);
+  /* background-color: #ffc107; */
+  height:100vh;
+  background-repeat: no-repeat;
+  z-index: -50;
+}
+
+
+
+
