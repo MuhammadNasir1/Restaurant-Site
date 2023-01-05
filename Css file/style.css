@@ -1,12 +1,15 @@
 /* .....navbar.....  */
-
+*{
+    scroll-behavior: smooth;
+}
+.justify-content-center {
+  justify-content: center!important;
+}
 .btn-close{
   font-size: xx-large;
   background-color: #ffc107;
 }
-.modal-content{
-  background-color: aqua;
-}
+
 .modal-header{
   border-bottom:none;
 }
@@ -17,7 +20,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  height: 100%;
+  width: 100%;
   
 }
 .search-btn{
@@ -32,7 +36,7 @@
   padding: 20px 0px 15px 10px;
   color: white;
   font-family: 'Arvo', serif;
-   
+ 
 }
 .search-input:focus {
   border: none;
@@ -108,19 +112,13 @@ z-index: -50;
 /* .....dropdown.... . */
 .dropdown-item{
   color:white;
-  
 }
 
 .dropdown-item:hover{
   background-color: #ffc107;
   color: black; 
 }
-/* .dropdown-menu a{
-  color: black;
-}
-.dropdown-menu a :hover{
-  color: black;
-} */
+
 
 /* .....banner-heading.... . */
 .heading{
@@ -209,6 +207,8 @@ height: auto;
   position: relative;
   margin-top:50px;
   border-radius: 20px; 
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .ok-hand-logo{
   width: 70px;
@@ -261,9 +261,59 @@ height: auto;
   height: 60vh;
   background-image:url(../image/banner_bg.jpg);
   border-radius: 20px;
-  /* background-repeat: no-repeat; */ 
+
+}
+.fix-image::before{
+  background-color: rgba(0, 0, 0, 0.516);
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+.offer{
+  padding-top:auto;
+  margin-bottom: auto;
+  position: relative;
+  text-align: center;
+  /* margin-top: 100px; */
+  padding:150px;
+ 
+
+}
+.fix-txt{
+  color:#ffc107;
+  font-family: 'Arvo', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.fix-img-main-txt{
+  color: #ffc107;
+  font-family: 'Arvo', serif;
+  position: relative;  
+
+}
+.special-offer-btn{
+  background-color: #ffc107;
+  border:2px solid white;
+  font-family: 'Arvo', serif;
+  color: black;
+  margin: 20px;
+  position: relative;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
+.special-offer-btn:hover{
+  background-color: transparent;
+  border:2px solid #ffc107;
+  color: #ffc107;
+  transition: all 0.50s;
+  position: relative;
+  
+}
 
 
 
@@ -280,7 +330,6 @@ h2{
   padding-top: 50px;
   padding-bottom: 10px;
   color: #ffc107;
-  /* color:white; */
   font-weight: bold;
   font-family: 'Arvo', serif;
   display: flex;
@@ -335,19 +384,17 @@ h2{
 }
 .footer-logo-div{
   align-items: center;
-  /* text-align: center; */
 }
 .left-boxa-para{
   color: #ffc107;
   font-family: 'Arvo', serif;
   padding-top: 23px;
-  /* text-align: center; */
+
 }
 .left-boxo-para{
   color: white;
   font-family: 'Arvo', serif;
-  /* padding-left: 15px; */
-  /* text-align: center; */
+
 
 }
 
@@ -360,7 +407,6 @@ h2{
 .center-box-para{
   padding-top: 10px;
   line-height: 27px;
-  /* color: white; */
   color:rgba(255, 255, 255, 0.900);
   font-size:large;
 
@@ -377,7 +423,6 @@ h2{
 }
 .left-box-links ul  a{
   text-decoration: none;
-  /* list-style-type: circle; */
   font-family: 'Arvo', serif;
   color:rgba(255, 255, 255, 0.900);
   line-height: 36px;
@@ -397,7 +442,6 @@ h2{
     padding-top: 20px;
     padding-bottom: 10px;
     text-align:center;
-    /* width: 100%; */
     font-size: larger;
     display: flex;
      justify-content: space-between;
@@ -423,7 +467,6 @@ h2{
    .menu-selecter{
     color:red;
     font-family: 'Arvo', serif;
-    text-align: center;
     font-size: 50px;
     color: white;
    }
@@ -431,17 +474,9 @@ h2{
   text-decoration: none;
   color:white;
   font-family: 'Arvo', serif;
-  display: flex;
-  justify-content: center;
   font-size: larger;
- 
 }
-.container-fluid a:hover{
-  text-decoration: underline;
-  text-decoration-color: #ffc107;
-  transition: 0.50s;
-  color: #ffc107;
-}
+
 
   .lunch-menu{
     border: 1px solid transparent;
@@ -482,6 +517,26 @@ h2{
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-bottom: 25px;
+  }
+  .lunch-text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .lunch-text a:hover{
+     color: #ffc107;
+     text-decoration: underline;
+     text-decoration-color: #ffc107;
+     transition: 0.50s;
+  }
+  .lunch-menu-inner:hover{
+    background-color: rgba(0, 0, 0, 0.425);
+    transform: rotate3d(180deg);
+    transition: all 0.5s;
   }
   
 
@@ -589,11 +644,35 @@ h2{
   padding: 10px 10px 10px 10px;
 }
 .blog-img:hover{
-  transition-delay:1s;
-  transition-timing-function: ease-in-out;
-  transition-duration:7s;
-  transition-property: all;
+  transform:perspective(3);
+  transition: 1s ease-in;
+
+  filter:blur(2);
 }
+.blog-name{
+  content: "";
+  height: 5%;
+  width: 30%;
+  position: absolute;
+  overflow: hidden;
+  background-color: white;
+  z-index: 100;
+  margin-top: 6%;
+  border-left: 1px solid #ffc107 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arvo', serif;
+  color: black;
+  font-size: 13px;
+}
+.blog-name:hover{
+  background-color: #ffc107;
+  color:black ;
+  transition: all 0.5s;
+
+}
+
 .card-body-blog{
   padding-top: 20px;
   padding-bottom: 50px;
@@ -651,21 +730,20 @@ font-weight: bolder;
 
 .blog-welcome-heading{
   color:white;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Arvo', serif;
   font-size: 50px;
 }
 .blog-div{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   width: 100%;
-  height: 95vh;
-  padding-top: 40vh;
 }
 .blog{
   color: #ffc107;
-  text-align: center;
   font-size: 80px;
   font-family: 'Arvo', serif;
 }
@@ -674,6 +752,16 @@ font-weight: bolder;
 /* .....Pagination.....  */
 .blog-1st-page{
   padding-top: 10vh;
+
+}
+.blog-cards{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
 .pagination{
 padding-bottom: 40px;
@@ -696,12 +784,214 @@ padding-top: 30px;
 
 .bg-banner{
   background-image: url(../image/Blog-Page-Banner-2.jpg);
-  /* background-color: #ffc107; */
   height:100vh;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   z-index: -50;
 }
 
+
+/* ...............................Contact Us...............................  */
+
+
+.contact-page-banner{
+  background-image: url(../image/Contact\ page-banner.jpg);
+  height:85vh;
+  background-repeat: no-repeat;
+  z-index: -50;
+  background-attachment: fixed;
+
+}
+
+.contact-page-banner::before{
+  content: "";
+  height:85vh;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.425);
+
+}
+.contact-us-heading{
+  color:white;
+  font-family: 'Arvo', serif;
+  font-size: 70px;
+  position: relative;
+}
+.contact-page-banner a {
+  text-decoration: none;
+  color: white
+}
+.contact-page-banner a:hover{
+  text-decoration: underline;
+  transition: all 0.50s;
+
+}
+
+.contact-page-heading{
+  font-size: larger;
+  color: rgba(255, 255, 255, 0.749);
+  position: relative;
+}
+.contact-div{
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.contact-div div{
+  display: flex;
+  flex-direction: row;
+}
+
+/* ....contact-page-map...  */
+/* .contact-txt{
+ 
+} */
+.contact-page-map{
+  width: 100%;
+  height: 60vh;
+  /* border: 10px double rgba(0, 0, 0, 0.66); */
+  border: 10px double black;
+  border-radius: 10px;
+}
+.contact-details{
+  border: 2px solid red;
+  
+}
+.contact{
+  margin-top:15vh;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* ....contact -form....  */
+.contact-form-heading{
+  color: #ffc107;
+  font-family: 'Arvo', serif;
+  display: flex;
+  justify-content: center;
+}
+
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.name{
+  border: none;
+  height: 6vh;
+  width: 100%;
+  margin-top: 20px;
+  border: 3px solid black;
+  border-radius: 3px;
+  padding: 20px 10px 20px 10px;
+  font-size: larger;
+  font-family: 'Arvo', serif;
+  color: #ffc107;
+
+  
+}
+.textarea{
+  color: #ffc107;
+  height: 15vh;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  padding: 10px;
+  font-size: larger;
+  border: 3px solid black;
+  border-radius: 3px;
+  font-family: 'Arvo', serif;
+
+}
+.name::placeholder {
+  color: #ffc107;
+}
+.textarea::placeholder{
+  color: #ffc107;
+}
+
+.contact-us-form-btn{
+  width: 100%;
+  font-family: 'Arvo', serif;
+  border: 3px solid black;
+  margin-top: 10px;
+  color: black;
+  font-size:x-large;
+  padding: 2px;
+  background-color: #ffc107;
+}
+
+.contact-us-form-btn:hover{
+  color: #ffc107;
+  background-color:rgba(0, 0, 0, 0.850);
+  border-color: #ffc107;
+  transition: all 0.50s;
+}
+
+/* .....location......  */
+.contact-page-details{
+  margin: 100px 20px 50px 20px;
+  padding: 20px 20px 20px 20px;
+  background-color: whitesmoke;
+}
+.contact-adress{
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0px 40px 0px;
+}
+
+.location-icon{
+  color: #ffc107;
+  font-size: 10vh;
+  text-align: center;
+
+}
+.location-txt{
+  text-align: center;
+  font-family: 'Arvo', serif;
+  color: rgba(0, 0, 0, 0.700);
+}
+/* ..........................................  */
+
+/* ...............................About us page...............................  */
+
+.speciality-box{
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.150),
+  -10px -10px 5px 0px rgba(0,0,0,0.150);
+}
+.about-speciality-heading{
+  text-align: center;
+  font-family: 'Arvo', serif;
+  color: rgba(0, 0, 0, 0.767);
+  margin-top: 10vh;
+}
+.Our-Speciality{
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+.about-us-fix-img{
+  background-image:url(../image/about\ us\ page-fix-img.jpg) ;
+  height: 70vh;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  border: 10px solid #ffc107;
+}
+.chefs-heading{
+  color:rgba(0, 0, 0, 0.792);
+  text-align: center;
+  font-family: 'Arvo', serif;
+
+}
+.our-chefs{
+  border:2px solid red;
+  padding:  50px 0px 50px 0px;
+}
 
 
 

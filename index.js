@@ -6,13 +6,8 @@ window.addEventListener('scroll', function(){
   }else{nav.classList.remove('bg-dark', 'shadow')}
 })
 
-// .....Modal-Searchbar.....
-// const myModal = document.getElementById('myModal')
-// const myInput = document.getElementById('myInput')
 
-// myModal.addEventListener('shown.bs.modal', () => {
-//   myInput.focus()
-// })
+
 
 
 

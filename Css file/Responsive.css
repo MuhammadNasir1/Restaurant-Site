@@ -4,10 +4,6 @@
   .celery-img{
     display: none;
   }
-  .peas{
-    display: none;
-  } 
-
     .card-blog{
       height: auto;
       width: 19rem;
@@ -174,6 +170,7 @@
 }
 
 }
+
 @media (max-width:340px)and (min-width:335px){
 .blog-welcome-heading{
  font-size: xx-large;
@@ -187,7 +184,7 @@
     width:16rem;
   }
   .card-text-blog{
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -225,7 +222,33 @@
   }
 }}
 
+
+/* ...................contact us page ...............  */
+@media (max-width:410px)and (min-width:310px){
+  .contact-us-heading{
+    font-size: 50px; 
+   }
+   .contact-page-heading span{
+    margin-bottom: 3px;
+   }
+   .contact-page-heading{
+    font-size: 17px;
+    margin-top: 4px;
+   }
   
+}
+@media (max-width:310px)and (min-width:0px){
+  .contact-us-heading{
+    font-size: 40px; 
+   }
+   .contact-page-heading span{
+    margin-bottom: 6px;
+   }
+   .contact-page-heading{
+    font-size: small;
+    margin-top: 4px;
+   }
+}
 
 
 
