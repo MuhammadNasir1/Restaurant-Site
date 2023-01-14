@@ -1,46 +1,38 @@
-
+@media (max-width:1024px)and (min-width:1020px) {
+  .nav-item{
+    font-size: 2vh;
+  }
+}
 
 @media (max-width:1100px){
-  .celery-img{
-    display: none;
-  }
+
     .card-blog{
       height: auto;
-      width: 19rem;
+
     }
     .header-img{
       display: none;
     }
-@media (max-width:1100px) and (min-width: 620px){
-  .banner{
-    position: absolute;
-    height: 118vh;
-    }
-}
-
-@media (max-width:990px)and (min-width:570px){
-
-}
 
 @media (max-width:1050px){
   .heading{
     font-size:57px;
     line-height: 65px;
-    padding-top: 33vh;
   }
 }
+@media (max-width:610px){
+  .chef-card{
+    border-color: transparent;
+  }
+}
+
 @media (max-width:620px)and (min-width:570px) {
   .heading{
     font-size:57px;
     line-height: 65px;
-    padding-top: 33vh;
   }
   .heading-span{
     font-size:51px;
-  }
-  .heading-buttons{
-    padding-left: 55px;
-    padding-top: 15px;   
   }
   .heading-btn{
     font-size: 20px;
@@ -48,23 +40,13 @@
     padding: 7px 5px 7px 5px;
     margin-top: auto;}
 }
-.banner{
-  position: absolute;
-  /* height: 80vh; */
-  z-index: -50;
-  }
 @media (max-width:570px)and (min-width:520px) {
   .heading{
     font-size:55px;
     line-height: 63px;
-    padding-top: 33vh;
   }
   .heading-span{
     font-size:50px;
-  }
-  .heading-buttons{
-    padding-left: 50px;
-    padding-top: 5px;  
   }
   .heading-btn{
     font-size: 18px;
@@ -76,15 +58,9 @@
   .heading{
     font-size:50px;
     line-height: 55px;
-    padding-top: 34vh;
-    padding-left: 20px;
   }
   .heading-span{
     font-size:45px;
-  }
-  .heading-buttons{
-    padding-left: 40px;
-    padding-top: 0px;  
   }
   .heading-btn{
     font-size: 16px;
@@ -95,15 +71,9 @@
   .heading{
     font-size:45px;
     line-height: 55px;
-    padding-top: 36vh;
-    padding-left: 16px;
   }
   .heading-span{
     font-size:40px;
-  }
-  .heading-buttons{
-    padding-left: 32px;
-    padding-top: 0px;  
   }
   .heading-btn{
     font-size: 14px;
@@ -115,15 +85,9 @@
   .heading{
     font-size:40px;
     line-height: 50px;
-    padding-top: 36vh;
-    padding-left: 14px;
   }
   .heading-span{
     font-size:35px;
-  }
-  .heading-buttons{
-    padding-left: 28px;
-    padding-top: 0px;  
   }
   .heading-btn{
     font-size: 14px;
@@ -134,15 +98,9 @@
   .heading{
     font-size:35px;
     line-height: 40px;
-    padding-top: 38vh;
-    padding-left: 12px;
   }
   .heading-span{
     font-size:30px;
-  }
-  .heading-buttons{
-    padding-left: 24px;
-    padding-top: 0px;  
   }
   .heading-btn{
     font-size: 14px;
@@ -153,15 +111,9 @@
   .heading{
     font-size:30px;
     line-height: 38px;
-    padding-top: 38vh;
-    padding-left: 12px;
   }
   .heading-span{
     font-size:28px;
-  }
-  .heading-buttons{
-    padding-left: 24px;
-    padding-top: 0px;  
   }
   .heading-btn{
     font-size: 13px;
@@ -216,10 +168,6 @@
     font-weight: bolder;
     padding: 7px 7px 7px 7px;
 }
-.banner{
-  position: absolute;
-  height: 110vh;
-  }
 }}
 
 
@@ -249,6 +197,175 @@
     margin-top: 4px;
    }
 }
+
+/* ...................about us page...............  */
+/* for z-fold screen   */
+@media (max-width:320px)and (min-width:0px){
+  .menu-selecter{
+    font-size: 40px;
+   }
+  .upcoming-event{
+    color: #ffc107;
+    font-size: 48px;
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+  }
+  .event-btn{
+     font-size: 20px;
+  }
+  .blog-name{
+    width: 40%;
+  }
+}
+
+@media (max-width:1230px)and (min-width:992px){
+  .video-section{
+    font-size: medium;
+  }
+  .video-btn{
+    font-size: medium;
+  }
+  .video-list{
+    margin: 0vh 1vh 0vh 1vh;
+  }
+  .contant-para{
+    margin: 0vh 2vh 0vh 2vh;
+  }
+  
+  .video-txt-list{
+    margin-top: 3vh;
+  }
+  .video-txt-list2{
+    margin-top: 2vh;
+  }
+}
+.blog-name{
+  width: 35%;
+}
+@media (max-width:767px)and (min-width:540px){
+  .blog-name{
+    /* width: 20%; ...................... */
+  }
+}
+@media (max-width:992px)and (min-width:540px){
+  .video-section{
+    font-size: x-large;
+  }
+  .video-btn{
+    font-size: medium;
+  }
+  .video-button{
+    margin-bottom:  15vh;
+  }
+  .watch-video-icon{
+    display: none;
+  }
+
+}
+
+@media (max-width:540px)and (min-width:440px){
+  .video-section{
+    font-size: large;
+  }
+  .video-btn{
+    font-size: small;
+  }
+  .video-button{
+    margin-bottom:  15vh;
+  }
+  .watch-video-icon{
+    display: none;
+  }
+  .video-list{
+    margin: 0vh 1vh 0vh 2vh;
+  }
+  .contant-para{
+    margin: 0vh 1vh 0vh 2vh;
+  }
+  
+  .video-txt-list{
+    margin-top: 3vh;
+  }
+  .video-txt-list2{
+    margin-top: 2vh;
+  }
+}
+@media (max-width:440px)and (min-width:380px){
+  .video-section{
+    font-size: medium;
+  }
+  .video-btn{
+    font-size: small;
+  }
+  .video-button{
+    margin-bottom:  15vh;
+  }
+  .watch-video-icon{
+    display: none;
+  }
+  .contant-heading{
+    font-family: 'Arvo', serif; 
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .contant-para{
+    font-size: 16px;
+  }
+
+}
+@media (max-width:380px)and (min-width:330px){
+  .video-section{
+    font-size: small;
+  }
+  .video-btn{
+    font-size: x-small;
+  }
+  .video-button{
+    margin-bottom:  15vh;
+  }
+  .watch-video-icon{
+    display: none;
+  }
+  .contant-heading{
+    font-family: 'Arvo', serif; 
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .contant-para{
+    font-size: 14px;
+  }
+}
+@media (max-width:330px)and (min-width:0px){
+  .video-section{
+    font-size: small;
+  }
+  .video-btn{
+    font-size: x-small;
+  }
+  .video-button{
+    margin-bottom:  15vh;
+    margin-top: 4vh;
+  }
+  .watch-video-icon{
+    display: none;
+  }
+  .contant-heading{
+    font-family: 'Arvo', serif; 
+    font-size: 20px;
+    line-height: 28px;
+}
+  .contant-para{
+    font-size: 12px;
+  }
+  .video-list{
+    margin: 0vh 2vh 0vh 2vh ;
+  }
+  .contant-para{
+    margin: 2vh 1vh 0vh 2vh;
+  }
+}
+
+
 
 
 
