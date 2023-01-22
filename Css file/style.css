@@ -5,11 +5,6 @@
    padding: 0%;
   }
 
-
-/* .......  */
-
-/* ...... */
-
   /* .....navbar.....  */
 .justify-content-center {
   justify-content: center!important;
@@ -19,24 +14,37 @@
   background-color: #ffc107;
 }
 
+
 .modal-header{
   border-bottom:none;
 }
 .dropdown:hover .dropdown-menu{
   display: block;
 }
-.searchbar{
+/* ...............................  */
+
+
+ .searchbar{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
-  
+  position: relative;
 }
-.search-btn{
-  padding-top: 20px;
+.modal-body{
+  position: relative;
 }
+.modal-body i{
+  font-size: xx-large;
+  color: white;
+}
+.modal-body a{
+  position: absolute;
+} 
 .search-input{
+  width: 80%;
+  outline: none;
   margin-top: 20vh;
   border: none;
   font-size:30px;
@@ -45,10 +53,7 @@
   padding: 20px 0px 15px 10px;
   color: white;
   font-family: 'Arvo', serif;
- 
-}
-.search-input:focus {
-  border: none;
+
 }
 
 .open-hours{
@@ -59,16 +64,31 @@
   background-color: rgb(0, 0, 0);
   border-left: none;
   border-right: none;
-  /* margin-top: 40vh; */
 }
 .text{
 text-align: center;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 10px 0px 10px 0px;
+flex-direction: column;
+padding: 26px 0px 20px 0px;
+position: relative;
+overflow: hidden;
 }
-
+.text h6{
+  position:absolute;
+  transform: translateX(100%);
+  animation: slide 15s linear infinite;
+  overflow: hidden;
+}
+@keyframes slide{
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
 .nav-item{
   margin:  0px 8px 0px 8px;
   font-size: 3.5vh;
@@ -88,7 +108,7 @@ margin-top: 35px;
 background-color: #ffc107;
 }
 .navbar .nav-link:hover::after,
-.navbar .nav-link:active::after{
+.navbar .nav-link.active::after{
   width: 100%;
   transition:0.50s ease-in-out;
 }
@@ -119,17 +139,15 @@ background-color: #ffc107;
 
 .togler{
   background-color: #ffc107;
-  border: 2px solid white ;  
+  border: 2px solid white; 
 }
 
 /* .....banner.... . */
 
 .banner{
 background-image: url(../image/home-banner.jpg);
-/* background-image: url(../image/Blog-Page-Banner-2.jpg); */
-height: 100vh;
+height: 92vh;
 z-index: -50;
-/* border: 2px solid red; */
 }
 
 /* .....dropdown.... . */
@@ -235,7 +253,6 @@ height: auto;
   font-size: x-large;
   padding-left: 10px;
   margin-top: 30px;
-  /* padding-top: 100px; */
 }
 /* ....speciality-Section.... */
 .speciality-box{
@@ -293,39 +310,7 @@ height: auto;
   padding-top: 40px;
 }
 
-.fix-img{
-  height: 60vh;
-  width: auto;
-  background-image:url(../image/banner_bg.jpg);
-  border-radius: 20px;
-  background-repeat: no-repeat;
-}
-.fix-image::before{
-  background-color: rgba(0, 0, 0, 0.516);
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  background-repeat: no-repeat;
-}
 
-
-
-.fix-txt{
-  color:#ffc107;
-  font-family: 'Arvo', serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-.fix-img-main-txt{
-  color: #ffc107;
-  font-family: 'Arvo', serif;
-  position: relative;  
-
-}
 .special-offer-btn{
   background-color: #ffc107;
   border:2px solid white;
@@ -345,8 +330,6 @@ height: auto;
   position: relative;
   
 }
-
-
 
 /* ....footer.... */
 footer{
@@ -425,8 +408,6 @@ h2{
 .left-boxo-para{
   color: white;
   font-family: 'Arvo', serif;
-
-
 }
 
 .center-box-heading{
@@ -629,12 +610,7 @@ h2{
   color: #ffc107;
   background-color: white;
 }
-.fix-image{
-  background-image: url(../image/main\ banner.jpg);
-  height: 100vh;
-  background-attachment: fixed;
 
-}
 .map{
   height: 100vh;
   touch-action: pan-x pan-y;
@@ -673,9 +649,6 @@ h2{
   padding: 10px 10px 10px 10px;
 }
 .blog-img:hover{
-  /* transform:perspective(3);
-  transition: 1s ease-in;
-  filter:blur(2); */
   transform: scale(1.01);
   transition: 0.50s;
 }
@@ -760,7 +733,9 @@ font-weight: bolder;
 }
 
 /* ...............................blog-page-start...............................  */
-
+.blog-banner-heading h1{
+ font-size: 100px;
+}
 .blog-welcome-heading{
   color:white;
   font-family: 'Arvo', serif;
@@ -897,8 +872,8 @@ font-weight: bolder;
 }
 
 /* ....contact -form....  */
+
 .contact-form-heading{
-  /* color: #ffc107; */
   color: black;
   font-family: 'Arvo', serif;
   display: flex;
@@ -974,14 +949,19 @@ font-weight: bolder;
   background-color: whitesmoke;
 }
 .contact-adress{
-  /* background-color: rgb(255, 255, 255); */
   background-color:#ffc107;
   padding: 30px 10px 40px 10px;
-  border: 10px double white
+  border: 10px double white;
 }
-
-.location-icon{
+.contact-adress:hover{
+  transition: all 10s;
+  background-color: white;
+  border: 4px solid rgba(0, 0, 0, 0.900);
+}
+.location-icon i{
   color: #ffc107;
+}
+.location-icon{
   font-size: 10vh;
   text-align: center;
 
@@ -1020,9 +1000,40 @@ font-weight: bolder;
   background-size: cover;
   width: 100%;
   border: 10px solid #ffc107;
+  position: relative;
+}
+.about-us-fix-img::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.730);
+  margin: auto;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+.fix-img-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+}
+.fix-img-text h3{
+  font-family: 'Arvo', serif;
+  color: #ffc107;
+  position: relative;
+  z-index: 300;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
 }
 .chefs-heading{
-  /* color:rgba(0, 0, 0, 0.792); */
   color:white;
   text-align: center;
   font-family: 'Arvo', serif;
@@ -1039,7 +1050,6 @@ font-weight: bolder;
 /* ......chef-card......  */
 .chef-card{
   border-color: transparent;
-  /* width: 17rem; */
   margin: 10px 0px 10px 0px;
   border: none;
 }
@@ -1138,7 +1148,6 @@ font-weight: bolder;
 .btn-chef:hover{
   background-color: white;
   color: black;
-  border:2px solid #ffc107;
   transition: all 0.50s;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.100);
 }
@@ -1234,6 +1243,30 @@ margin-top: 10vh;
 
 
 /* ....................blog-details-page............  */
+
+.reservation a {
+  text-decoration: none;
+  color: white
+}
+.reservation a:hover{
+  text-decoration: underline;
+  transition: all 0.50s;
+
+}
+
+.reservation h6{
+  font-size: larger;
+  color: rgba(255, 255, 255, 0.749);
+  position: relative;
+}
+
+.reservation h1 {
+  color:white;
+  font-family: 'Arvo', serif;
+  font-size: 70px;
+  position: relative;
+}
+
 
 .blog-details-page-banner{
   background-image: url(../image/blog-details-banner.jpg);
@@ -1430,17 +1463,22 @@ margin-top: 10vh;
 }
 
 /* .......auther-details......  */
+
 .author-details{
   border: 10px double black;
   background-color: #ffc107;
   position: relative;
   margin-top: 5vh;
+  height: 100%;
+  width: 100%;
+
 }
 
 .author-box{
   margin: 5vh;
   display: flex;
 }
+
 
 .author-box img {
   width: 120px;
@@ -1454,13 +1492,14 @@ margin-top: 10vh;
   margin-right: 8vh;
   font-family: 'Arvo', serif;
   margin-bottom:0%;
+  overflow: hidden;
+
 }
 .authet-txt-para{
   color: rgba(0, 0, 0, 0.700);
 }
 .auther-txt .authet-txt-para2{
   color: rgba(0, 0, 0, 0.600);
-  margin-top: 0%;
 }
 
 
@@ -1478,14 +1517,12 @@ margin-top: 10vh;
 }
 /* ....blog-comments-form.....  */
 .blog-form{
-  /* border: 2px solid red; */
   padding: 50px;
   background-color: whitesmoke;
   margin-top: 5vh;
 }
 .comment-form input  {
   width: 49.5%;
-  
 }
 
 .comment-form input ,.comment-form textarea {
@@ -1523,29 +1560,31 @@ margin-top: 10vh;
 }
 
 
-
-
-
-
-
-
-/* ...................................  */
-
-
-
 /* ......blog-search-bar.......  */
-
+.blog-search-bar i{
+  color: black;
+  position:absolute;
+  padding-top:15px ;
+  padding-right: 15px;
+}
+.blog-search-bar a{
+  height:100;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
 .blog-category-boxs{
-  /* border: 2p/x solid red; */
   height: 300vh;
   padding: 0px 20px;
   margin-top: 5vh;
+}
+.blog-search-bar form input:focus{
+  outline: none;
 }
 .blog-search-bar form input{
   width: 100%;
   font-family: 'Arvo', serif;
   padding: 10px;
-  /* background-color: #ffc1079e; */
   background-color:#ffc107;
   color: black;
   border: 2px solid black;
@@ -1561,7 +1600,6 @@ margin-top: 10vh;
   font-family: 'Arvo', serif;
   border: 10px double black ;
   margin-top: 30px;
-  /* height: 50vh; */
 }
 .blog-Category ul{
   list-style-type: none;
@@ -1640,75 +1678,251 @@ margin-top: 10vh;
   transition: all 0.50s;
 }
 
-/* ........blog-contact-img-box.....  */
-.blog-contact-box{
+/* ........line-break.....  */
+.line-break {
+  width:100%  ;
+  border: 10px double black;
+  overflow: hidden;
   margin-top: 5vh;
+}
+
+/* ........line-break.....  */
+.popular-tags{
+  background-color: black;
+  font-family: 'Arvo', serif;
+  border: 10px double #ffc107 ;
+  margin-top: 30px;
+}
+
+.popular-tags-txt{
+  padding: 8% 5% 8% 5%;
+}
+.popular-tags-txt h4{
+  color: #ffc107;
+}
+.popular-tags-txt button{
+  font-size: large;
+  color:#ffc107;
+  border: 2px solid white;
+  margin:8px 0px 4px 0px;
+}
+.popular-tags-txt button:hover{
+  color: white;
+  border-color:#ffc107;
+}
+
+/* ......................Reservation-form...........  */
+.form-table{
+  margin-bottom: 40px;
+  padding: 0px 120px 0px 120px;
 
 }
-.txt-blog{
+.reservation-heading{
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.reservation-heading h1 {
+  font-family: 'Arvo', serif;
+  font-size: 50px;
+  position: relative;
+  border-bottom: 3px solid black;
+}
+
+.reservation-heading   ::before{
+  content: '';
+  position: absolute;
+  height: 6px;
+  width:100%;
+  left: 0;
+  margin-top: 66px;
+  background-color: #ffc107;
+  }
+
+
+/* ...............................  */
+.reservation-form {
+  font-family: 'Arvo', serif;
+  color: rgba(0, 0, 0, 0.800);
+}
+.reservation-form input{
+  width: 100%;
+  height: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.600);
+  outline: none;
+  padding:25px 5px 25px 25px;
+  color: rgba(0, 0, 0, 0.800);
+  background-color: #ffc107;
+  
+}
+.reservation-form textarea {
+  border: 2px solid rgba(0, 0, 0, 0.600);
+  width: 100%;
+  background-color: #ffc107;
+  padding: 10px;
+}
+.reservation-form label{
+  margin-top: 10px;
+}
+
+.reservation-form ::placeholder{
+  color: rgba(0, 0, 0, 0.600);
+}
+.reservation-form textarea ::placeholder{
+  color: rgba(0, 0, 0, 0.800);
+}
+.reservation-form .bnt{
+  margin-top: 20px;
+  display: flex;
   height: 100%;
   width: 100%;
+  justify-content: center;
+  align-items:center;
   flex-direction: column;
 }
-.contact-img {
-  background-image: url(../image/blog-contact-info-bg.jpg);
-  height: auto;
-  width:100%  ;
-  background-repeat: no-repeat;
-  border: 10px double #ffc107;
-  overflow: hidden;
-  background-position:center;
-  /* padding: 20px; */
-}
-.contact-img h3{
-  color:white;
-  font-family: 'Arvo', serif;
-  margin-top: 50px;
 
-}
-.contact-img p{
+.reservation-form button{
   color:#ffc107;
-  font-family: 'Arvo', serif;
-  margin-top: 5vh;
-  
+  background-color: black;
+  border:2px solid #ffc107;
+  font-size: x-large;
 }
-.contact-img button {
-  margin-top: 30px;
-  margin-bottom: 100px;
-  border: 2px solid white;
-  font-family: 'Arvo', serif;
+.reservation-form button:hover {
+  color:black;
   background-color: #ffc107;
-  font-size: larger
-  
-}
-.contact-img button:hover {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.700);
-  border: 2px solid white;
-  transition: all 0.50s;
+  border:3px solid black
 }
 
+/* ................menu-page.................  */
 
-
-
-/* ............................  */
-/* 
-.carousel-item img{
-  height: 100vh;
-  width: auto;
-
-} */
-
-
-.tcxt{
-  position: absolute;
-  display: flex;
+.menu-top-heading{
+  margin-top: 30px;
+  font-family: 'Arvo', serif;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 2px;
 }
 
+.menu-top-heading p{
+  color: #ffc107;
+  text-transform: uppercase;
+
+}
+/* .........menu-start........  */
+.menu-1 img{
+  position: relative;
+}
+.menu-items{
+  margin-top: 60px;
+}
+
+.menu-details{
+  display: flex;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+  -ms-flex-direction: inherit;
+  flex-direction: inherit;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.menu-lists{
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-filter: drop-shadow(0px 10px 60px rgba(0, 0, 0, 0.650));
+  filter: drop-shadow(0px 10px 60px rgba(0, 0, 0, 0.6));
+  -webkit-margin-end: 30px;
+  margin-inline-end: 30px;
+}
+.menu-1 img{
+  border:3px solid #ffc107;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.menu-text{
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-family: 'Arvo', serif;
+}
+.menu-text .dot-border{
+  display: inline;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border-bottom: 1px dashed;
+  margin-bottom: 10px;
+}
+
+.menu-text .doller{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu-text .price{
+  float: right;
+  color: rgba(0, 0, 0, 0.700);
+}
+.menu-text .price:hover{
+  color: #ffc107;
+}
+.menu-text h3 a{
+  text-decoration: none;
+  display: inline;
+  color: rgba(0, 0, 0, 0.700)
+}
+.menu-text h3 a:hover{
+  color: #ffc107;
+  transition: 0.50s;
+}
+.menu-text h3{
+  display: flex;
+  font-size: 30px;
+}
+.menu-text p {
+  color: rgba(0, 0, 0, 0.500)
+}
+
+.order{
+  margin-top: 10px;
+}
+.order a{
+  text-decoration: none;
+  margin-left: 6px;
+}
+.order p{
+  font-size: larger;
+  color: #ffc107;
+  display: inline;
+}
+.order p:hover{
+  color: rgba(0, 0, 0, 0.60);
+}
+.order i{
+  font-size: larger;
+  display: inline;
+}
+
+.menulist-2{
+  margin-top: 20vh;
+}
+#booking-form{
+  margin-top: 30px;
+}
+.hr p{
+  border: 10px double rgba(0, 0, 0, 0.800);
+  margin-top: 40px;
+}

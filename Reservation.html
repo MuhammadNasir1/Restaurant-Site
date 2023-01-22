@@ -14,15 +14,15 @@
 
 <body>
   <!-- ....banner.... -->
-  <div class="contact-page-banner col-12">
-    <div class="contact-div">
+  <div class="contact-page-banner blog-details-page-banner col-12">
+    <div class="contact-div reservation">
       <div data-aos="zoom-in">
         <a href="index.html">
-          <h6 class="contact-page-heading">Home</h6>
+          <h6>Home</h6>
         </a> <span style="margin: 0px 6px 0px 6px; color:white  ;">/</span>
         <h6 class="contact-page-heading">contact Us</h6>
       </div>
-      <h1 data-aos="zoom-in" class="contact-us-heading">Contact Us </h1>
+      <h1 data-aos="zoom-in" class="contact-us-heading">Reservation</h1>
     </div>
   </div>
 
@@ -47,19 +47,18 @@
             <a class="reservation nav-link text-white" href="About Us.html">About Us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link text-white active" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Other
             </a>
             <ul class="dropdown-menu bg-dark bg-opacity-75">
-              <li><a class="dropdown-item active" href="Contact Us.html">Contact Us</a></li>
+              <li><a class="dropdown-item" href="Contact Us.html">Contact Us</a></li>
               <li><a class="dropdown-item" href="Blog.html">Blogs</a></li>
               <li><a class="dropdown-item" href="BLog details.html">Blog details </a></li>
             </ul>
           </li>
 
           <li class="nav-item">
-            <a class="reservation nav-link text-white" href="Reservation.html">Reservation</a>
+            <a class="reservation nav-link text-white active" href="Reservation.html">Reservation</a>
           </li>
         </ul>
         <a href="sign-in.html"><i class="fa-regular fa-user"></i></a>
@@ -69,39 +68,76 @@
     </div>
   </nav>
   <!-- ....Navbar-End.... -->
-  <!-- ............  -->
-  <div class="contact">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="contact-map col-lg-8 col-md-12 col-sm-12" data-aos="zoom-in">
-          <iframe class="contact-page-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.332179094592!2d
-            -122.01116068524081!3d37.334643779841954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
-            1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1sen!2s!4v1672758354679!5m2!
-            1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="container">
+    <div class="row">
+      <div class="form-table">
+        <div class="col-12" data-aos="zoom-in">
+          <div class="reservation-heading">
+            <h1>Make a Reservation</h1>
+          </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12 contact-txt" data-aos="zoom-in">
-          <h1 class="contact-form-heading">For Enquiries</h1>
-          <div class="contact-form">
-            <form action="#" class="contact-form">
-              <label for="name" data-aos="zoom-in">
-                <input class="name" type="text" name="name" id="#" placeholder="Name" required>
-              </label>
-              <label for="email" data-aos="zoom-in">
-                <input class="name" type="email" name="email" id="#" placeholder="Email" required>
-              </label>
-              <label for="message" data-aos="zoom-in">
-                <textarea class="textarea" placeholder="Message"></textarea>
-              </label>
-              <label for="submit" data-aos="zoom-in">
-                <button type="submit" class="btn contact-us-form-btn">Submit</button>
-              </label>
+        <!-- ..................  -->
+        <div class="">
+          <div class="reservation-form">
+            <form action="#">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="zoom-in">
+                  <label for="#">Name*</label>
+                  <p>
+                    <input type="text" name="" id="" placeholder="Full Name">
+                  </p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="zoom-in">
+                  <label for="#">Email*</label>
+                  <p>
+                    <input type="email" name="" id="" placeholder="Your Email">
+                  </p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="zoom-in">
+                  <label for="#">Phone*</label>
+                  <p>
+                    <input type="text" name="" id="" placeholder="Your Phone">
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="zoom-in">
+                  <label for="#">Guest*</label>
+                  <p>
+                    <input type="number" name="" id="" placeholder="Num Of Guest">
+                  </p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="zoom-in">
+                  <label for="#">Date*</label>
+                  <p>
+                    <input type="date" name="" id="" placeholder="Date">
+                  </p>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="zoom-in">
+                  <label for="#">Time*</label>
+                  <p>
+                    <input type="time" name="" id="" placeholder="Time">
+                  </p>
+                </div>
+              </div>
+              <div class="row" data-aos="zoom-in">
+                <label for="#">Special Requests</label>
+                <textarea name="" id="" rows="7" placeholder="Message"></textarea>
+              </div>
+              <div class="bnt" data-aos="zoom-in">
+                <button type="submit" class="btn">Book Now</button>
+              </div>
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- ...........  -->
+  </div>
+
+  <!-- ......fix-img......  -->
+  <div class="about-us-fix-img col-12"></div>
+  <!-- ......fix-img-end......  -->
 
   <div class="contact-page-details">
     <div class="container-fluid">
@@ -133,6 +169,7 @@
       </div>
     </div>
   </div>
+
   <!-- ....Footer.... -->
   <footer class="container-xxl" data-aos="zoom-in">
     <div class="main-footer-contant row col-xl-12 col-lg-12 col-md-12 col-sm-12">
@@ -162,7 +199,6 @@
               <a href="#">
                 <li>Coming Soon</li>
               </a>
-              <!-- <a href="#"><li>News & Tips</li></a> -->
             </ul>
           </div>
           <div class="col-6 left-box-links">
@@ -186,8 +222,6 @@
           </div>
         </div>
       </div>
-
-
       <div class="center-bo col-xl-4 col-lg-4 col-md-12 col-sm-12">
         <div class="footer-logo-div"> <img class="footer-logo" src="./image/logo.svg" alt=""></div>
 
@@ -197,10 +231,6 @@
             prevents our being able to do what we every one pleasure to be welcomed.</p>
         </div>
       </div>
-
-
-
-
       <div class="center-box col-xl-4 col-lg-4 col-md-12 col-sm-12 ">
         <h2> Address</h2>
         <div class="center-box-heading-div"><span class="center-box-heading">location</span>
@@ -217,10 +247,7 @@
           <a href="#"><span class="fab fa-instagram fa-xl"></span></a>
           <a href="#"><span class="fab fa-youtube fa-xl"></span></a>
         </div>
-
       </div>
-
-
       <div class="copyright col-12 container-fluid m-lg-auto">Copyright © 2023 Blank. All Rights Reserved.
         <div class="copyrigh"><a href="#"><span>Terms & Conditions</span></a>
           <div class="copyrighta"><a href="#"><span class=" copyrighta">Privacy Policy</span></a>
@@ -245,13 +272,12 @@
               <input class="search-input col-9 align-self-center bg-dark" type="text" required
                 placeholder="Type Your Keywords Here ">
             </form>
-
           </div>
         </div>
       </div>
     </div>
   </div>
-
+  </div>
 
   <script src="https://kit.fontawesome.com/c416a2d46a.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -261,7 +287,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-      offset: 100,
+      offset: 50,
       duration: 1000,
     });
   </script>

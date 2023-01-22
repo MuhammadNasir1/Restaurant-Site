@@ -242,11 +242,7 @@
 .blog-name{
   width: 35%;
 }
-@media (max-width:767px)and (min-width:540px){
-  .blog-name{
-    /* width: 20%; ...................... */
-  }
-}
+
 @media (max-width:992px)and (min-width:540px){
   .video-section{
     font-size: x-large;
@@ -366,10 +362,306 @@
 }
 
 
+/* ...............blog-details-page................  */
+@media (max-width:430px)and (min-width:0px){
+  .paraa{
+    font-size: px;
+  }
+  .paraa h1{
+    font-size: 40px;
+  }
+}
+@media (max-width:992px)and (min-width:0px){
+  .author-box-img{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .auther-txt{
+    margin-left: 0vh;
+    margin-right: 0vh;
+    font-family: 'Arvo', serif;
+   overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  .auther-txt h4{
+    margin-top: 20px;
+  }
+
+  .author-box{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+  }
+  .comment-form input  {
+    width: 100%;
+  }
+  .auther-txt p{
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+@media (max-width:1025px)and (min-width:0px){
+  .author-box-img{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .auther-txt{
+    margin-left: 0vh;
+    margin-right: 0vh;
+    font-family: 'Arvo', serif;
+   overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+  .auther-txt h4{
+    margin-top: 20px;
+  }
+  .auther-txt p{
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .author-box{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+  }
+  .comment-form input  {
+    width: 100%;
+  }
+
+  .auther-txt .authet-txt-para2{
+    color: rgba(0, 0, 0, 0.600);
+    margin-top: 0%;
+  }
+
+}
+
+@media (max-width:600px) and (min-width:500px){
+  .details-top-list ul li {
+    font-size: 14px;
+    margin-top: 2vh;
+  }
+}
+@media (max-width:500px) and (min-width:425px){
+  .details-top-list ul li {
+    font-size: 12px;
+    margin-top: 2vh;
+  }
+}
+@media (max-width:425px) and (min-width:300px){
+  .details-top-list ul li {
+    font-size: 10px;
+    margin-top: 2vh;
+  }
+}
+@media (max-width:300px) and (min-width:30px){
+  .details-top-list ul li {
+    font-size: 6px;
+    margin-top: 2vh;
+  }
+}
+
+
+/* ......................Reservation-page............ */
+
+@media (max-width:992px) and (min-width:768px){
+  .reservation-heading h1 {
+    font-size: 45px;
+  }
+  .reservation-heading   ::before{
+    margin-top: 60px;
+    }
+
+}
+@media (max-width:768px) and (min-width:410px){
+  .reservation-heading h1 {
+    font-size: 30px;
+  }
+  .reservation-heading   ::before{
+    margin-top: 43px;
+    }
+}
+@media (max-width:410px) and (min-width:358px){
+  .reservation-heading h1 {
+    font-size: 25px;
+  }
+  .reservation-heading   ::before{
+    margin-top: 38px;
+    }
+}
+@media (max-width:358px) and (min-width:300px){
+  .reservation-heading h1 {
+    font-size: 23px;
+  }
+  .reservation-heading   ::before{
+    margin-top: 35px;
+    }
+}
+@media (max-width:300px) and (min-width:0px){
+  .reservation-heading h1 {
+    font-size: 15px;
+  }
+  .reservation-heading   ::before{
+    margin-top: 24px;
+  }
+}
+@media (max-width:770px) and (min-width:500px){
+  .form-table{
+    margin-bottom: 40px;
+    padding: 0px 80px 0px 80px;
+  
+  }
+}
+@media (max-width:500px) and (min-width:0px){
+  .form-table{
+    margin-bottom: 40px;
+    padding: 0px 40px 0px 40px;
+  
+  }
+}
+@media (max-width:660px) and (min-width:340px){
+  .reservation h6{
+    font-size: large;
+  }
+  
+  .reservation h1 {
+    font-size: 50px;
+  }
+  
+}
+@media (max-width:340px) and (min-width:0px){
+  .reservation span{
+    margin-bottom: 2px;
+   }
+  .reservation h6{
+    font-size: medium;
+  }
+  
+  .reservation h1 {
+    font-size: 30px;
+  }
+  
+}
+
+/* ....................Menu-page................ */
+@media (max-width:400px) and (min-width:348){
+  .menu-top-heading h1{
+    font-size: x-large; }
+}
+@media (max-width:348px) and (min-width:0){
+  .menu-top-heading h1{
+    font-size: large;
+   }
+
+  .menu-top-heading p{
+    font-size: small;
+   }
+}
+@media (max-width:580px) and (min-width:0){
+
+  .menu-lists{
+    flex: 0 0 auto;
+    width:120px;
+    height:120px;
+  }
+  .menu-text h3{
+    display: flex;
+    font-size: 20px;
+    /* line-height: 39px; */
+  }
+  .menu-text p {
+    font-size: small;
+  }
+  .order p{
+    font-size: large;
+    color: #ffc107;
+  }
+  .menulist-2{
+    margin-top: 10vh;
+  }
+  .menu-lists img{
+    width: 130px;
+    height: 130px;
+  }
+}
 
 
 
+@media (max-width:430px) and (min-width:350){
 
+  .menu-lists{
+    flex: 0 0 auto;
+    width: 110px;
+    height: 110px;
+  }
+  .menu-text h3{
+    font-size: 15px;
+  }
+  .menu-text p {
+    font-size: small;
+  }
+  .order p{
+    font-size: large;
+    color: #ffc107;
+  }
+  .menulist-2{
+    margin-top: 10vh;
+  }
+  .menu-lists img{
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width:350px) and (min-width:0){
+
+  .menu-lists{
+    flex: 0 0 auto;
+    width: 95px;
+    height: 95px;
+  }
+  .menu-text h3{
+    font-size: 12px;
+  }
+  .menu-text p {
+    font-size: x-small;
+  }
+  .order p{
+    font-size: medium;
+    color: #ffc107;
+  }
+  .menulist-2{
+    margin-top: 10vh;
+  }
+  .menu-lists img{
+    width: 110px;
+    height: 110px;
+  }
+}
 
 
 
